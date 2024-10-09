@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+      }
+      h1 {
+        margin: 0;
+      }
+      section {
+        margin: 20px;
+      }
+      h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+      button {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin-right: 10px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #3e8e41;
+      }
+      div {
+        margin: 20px;
+      }
+      h3 {
+        font-size: 18px;
+        margin: 10px 0;
+      }
+      footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>OATS</h1>
+    </header>
+    <section>
+      <h2>Index Page</h2>
+      <button type="submit"><a href="/login">Login</a></button>
+      <button type="submit"><a href="/register">Register</a></button>
+      <button type="submit"><a href="/forgotpasw">Forgot Password</a></button>
+    </section>
+    <div>
+      {% for msg in messages%}
+      <h3>{{msg}}</h3>
+      {% endfor %}
+    </div>
+    <footer>
+      Umass Boston
+    </footer>
+  </body>
+</html>
